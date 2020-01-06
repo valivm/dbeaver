@@ -107,17 +107,6 @@
                 order="200">
             <objectType name="org.jkiss.dbeaver.model.exec.DBCResultSet" if="context.supportsAttributes()"/>
         </presentation>
-        <presentation
-                id="plaintext"
-                label="%presentation.plaintext.label"
-                description="%presentation.plaintext.description"
-                icon="platform:/plugin/org.jkiss.dbeaver.ui/icons/sql/sql_text.png"
-                class="org.jkiss.dbeaver.ui.controls.resultset.plaintext.ConsoleTextPresentation"
-                type="columns"
-                supportsRecordMode="true"
-                order="200">
-            <objectType name="org.jkiss.dbeaver.model.exec.DBCResultSet" if="context.supportsAttributes()"/>
-        </presentation>
     </extension>
 
     <extension point="org.jkiss.dbeaver.resultset.panel">
