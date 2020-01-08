@@ -8,6 +8,7 @@ Bundle-Vendor: %Bundle-Vendor
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui.console,
  org.eclipse.core.expressions,
  org.eclipse.jface.text,
  org.eclipse.ui;visibility:=reexport,

@@ -39,6 +39,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.ScrollBar;
 import org.eclipse.swt.widgets.Shell;
+import org.eclipse.ui.console.TextConsole;
 import org.eclipse.ui.themes.ITheme;
 import org.eclipse.ui.themes.IThemeManager;
 import org.jkiss.code.NotNull;
@@ -245,7 +246,7 @@ public class ConsoleTextPresentation extends AbstractPresentation implements IAd
         if (controller.isRecordMode()) {
             printRecord();
         } else {
-            printGrid(append);
+            printGrid(true);
         }
     }
 
@@ -495,7 +496,8 @@ public class ConsoleTextPresentation extends AbstractPresentation implements IAd
             }
         }
         grid.setLength(grid.length() - 1); // cut last line feed
-        text.setText(grid.toString());
+        text.append(grid.toString());
+//        text.setText(grid.toString());
     }
 
     @Override
